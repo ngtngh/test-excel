@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form nhập liệu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Nhập thông tin sinh viên</h1>
+    <form id="studentForm" action="/" method="POST" onsubmit="handleSubmit(event)">
+        <label for="student_id">Mã sinh viên:</label>
+        <input type="text" id="student_id" name="student_id" oninput="autofillStudentInfo()" required>
+        <div class="info">
+            <label for="name">Họ và tên:</label>
+            <div id="name" class="value"></div>
+        </div>
+        <div class="info">
+            <label for="birthdate">Ngày sinh:</label>
+            <div id="birthdate" class="value"></div>
+        </div>
+        <div class="info">
+            <label for="score">Điểm số:</label>
+            <div id="score" class="value"></div>
+        </div>
+
+        <input type="hidden" id="hidden_name" name="name">
+        <input type="hidden" id="hidden_birthdate" name="birthdate">
+        <input type="hidden" id="hidden_score" name="score">
+
+        <input type="submit" id="submitBtn" value="Gửi" disabled>
+        <div id="successMessage" style="display:none;">Đã gửi thành công</div>
+    </form>
+</body>
+</html>

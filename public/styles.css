@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    align-self: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.info {
+    margin-bottom: 10px;
+}
+
+.info label {
+    display: inline-block;
+    width: 100px;
+}
+
+.info .value {
+    display: inline-block;
+    width: calc(100% - 120px); /* 100% - width của label */
+    vertical-align: top;
+    margin-left: 10px; /* Khoảng cách giữa label và giá trị */
+    font-weight: bold;
+}
+
+#student_id {
+    font-family: Arial, sans-serif;
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="submit"]:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+#successMessage {
+    text-align: center;
+    padding: 8.5px;
+    color: green;
+    font-weight: bold;
+}
